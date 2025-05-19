@@ -4,7 +4,7 @@ class PopularDietsModel {
   String level;
   String duration;
   String calorie;
-  String boxIsSelected;
+  bool boxIsSelected;
 
   PopularDietsModel({
     required this.name,
@@ -21,22 +21,22 @@ class PopularDietsModel {
     popularDiets.add(
       PopularDietsModel(
         name: 'Blueberry Pancake',
-        iconPath: 'assets/icons/blueberry-pancakes.svg',
+        iconPath: 'assets/icons/blueberry-pancake.svg',
         level: 'Medium',
-        duration: '30 mins',
+        duration: '30mins',
         calorie: '230kCal',
-        boxIsSelected: 'true',
+        boxIsSelected: true,
       ),
     );
 
     popularDiets.add(
       PopularDietsModel(
-        name: 'Salmond Nigiri',
+        name: 'Salmon Nigiri',
         iconPath: 'assets/icons/salmon-nigiri.svg',
         level: 'Easy',
         duration: '20mins',
         calorie: '120kCal',
-        boxIsSelected: 'false',
+        boxIsSelected: false,
       ),
     );
 

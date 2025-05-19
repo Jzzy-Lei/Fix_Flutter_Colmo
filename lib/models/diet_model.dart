@@ -1,10 +1,13 @@
+import 'package:flutter/material.dart';
+
 class DietModel {
   String name;
   String iconPath;
   String level;
   String duration;
   String calorie;
-  String viewIsSelected;
+  Color boxColor;
+  bool viewIsSelected;
 
   DietModel({
     required this.name,
@@ -12,6 +15,7 @@ class DietModel {
     required this.level,
     required this.duration,
     required this.calorie,
+    required this.boxColor,
     required this.viewIsSelected,
   });
 
@@ -23,9 +27,10 @@ class DietModel {
         name: 'Honey Pancake',
         iconPath: 'assets/icons/honey-pancakes.svg',
         level: 'Easy',
-        duration: '30 mins',
-        calorie: '189kCal',
-        viewIsSelected: 'true',
+        duration: '30mins',
+        calorie: '180kCal',
+        viewIsSelected: true,
+        boxColor: Color(0xff9DCEFF),
       ),
     );
 
@@ -36,7 +41,8 @@ class DietModel {
         level: 'Easy',
         duration: '20mins',
         calorie: '230kCal',
-        viewIsSelected: 'false',
+        viewIsSelected: false,
+        boxColor: Color(0xffEEA4CE),
       ),
     );
 
